@@ -8,6 +8,7 @@ import Candy from "../../Assets/Projects/CandyCrush.png";
 import RockPaper from "../../Assets/Projects/RockPaper.png";
 import amazon from "../../Assets/Projects/AmazonClone.png";
 import weather from "../../Assets/Projects/weather.png";
+import invoice from "../../Assets/Projects/invoice.png";
 
 function Projects() {
   return (
@@ -23,10 +24,20 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={invoice}
+              isBlog={false}
+              title="Invoice Management App"
+              description="Designed and implemented an Invoice Management application using React and Firebase.The app features invoice generation, monthly report views, and real-time data synchronization. Developed a user-friendly interface to streamline invoice creation and management. Integrated authentication to ensure secure data handling. "
+              ghLink="https://github.com/ankur7aditya/invoice"
+              demoLink="https://invoice-lilac-alpha.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={ecommerce}
               isBlog={false}
               title="E-Commerce"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="Developed a feature-rich e-commerce application using MERN stack (MongoDB, Express, React, Node.js). The application includes functionalities such as order history tracking, user profile management, and an admin panel for managing products and orders."
               ghLink="https://github.com/ankur7aditya/MERN-ecommerce"
               demoLink="https://mern-ecommerce-orpin.vercel.app/ "
             />
@@ -37,7 +48,7 @@ function Projects() {
               imgPath={Candy}
               isBlog={false}
               title="Candy Crush"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="Built a interactive candy crush game using vanilla JavaScript and HTML CSS. Used the knowledge of Data Structure and Algorithm for pattern matching."
               ghLink="https://github.com/ankur7aditya/Candy-Crush"
               demoLink="https://ankur7aditya.github.io/Candy-Crush/"
             />
@@ -48,9 +59,9 @@ function Projects() {
               imgPath={RockPaper}
               isBlog={false}
               title="Rock Paper Scissor"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="In this Rock-Paper-Scissors Game, I learnt the use of local storage to store the score and function of Math in javascript for generating random output of computer game."
               ghLink="https://github.com/ankur7aditya/Rock-Paper-Scissors-Game"
-              demoLink="https://ankur7aditya.github.io/Rock-Paper-Scissors-Game/"              
+              demoLink="https://ankur7aditya.github.io/Rock-Paper-Scissors-Game/"
             />
           </Col>
 
@@ -59,9 +70,8 @@ function Projects() {
               imgPath={amazon}
               isBlog={false}
               title="Amazon Clone(Frontend)"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              description="Used vanilla CSS to replicate the landing page of Amazon. Used the knowledge of flex-box, grid and other CSS box model and styling."
               ghLink="https://github.com/ankur7aditya/Amazon-Clone-HTML-CSS"
-              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
@@ -70,23 +80,10 @@ function Projects() {
               imgPath={weather}
               isBlog={false}
               title="Weather App"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              description="Used the weather API and used to display the weather of the input city. Learnt how to call an API and optimising the call for seamless output."
               ghLink="https://github.com/ankur7aditya/ExpressWeatherApp"
-              
             />
           </Col>
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col> */}
         </Row>
       </Container>
     </Container>
