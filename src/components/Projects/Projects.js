@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/blog.png";
 import ecommerce from "../../Assets/Projects/E-commerce.png";
 import Candy from "../../Assets/Projects/CandyCrush.png";
 import RockPaper from "../../Assets/Projects/RockPaper.png";
@@ -27,7 +26,7 @@ function Projects() {
               imgPath={invoice}
               isBlog={false}
               title="Invoice Management App"
-              description="Designed and implemented an Invoice Management application using React and Firebase.The app features invoice generation, monthly report views, and real-time data synchronization. Developed a user-friendly interface to streamline invoice creation and management. Integrated authentication to ensure secure data handling. "
+              description="Designed and implemented an Invoice Management application using React and Firebase.The app features invoice generation, monthly report views, and real-time data synchronization. Developed a user-friendly interface to streamline invoice creation and management. Integrated authentication to ensure secure data handling. Use (id:ankur14@gmail.com) (password:123456) for demo purpose."
               ghLink="https://github.com/ankur7aditya/invoice"
               demoLink="https://invoice-lilac-alpha.vercel.app/"
             />
@@ -37,7 +36,7 @@ function Projects() {
               imgPath={ecommerce}
               isBlog={false}
               title="E-Commerce"
-              description="Developed a feature-rich e-commerce application using MERN stack (MongoDB, Express, React, Node.js). The application includes functionalities such as order history tracking, user profile management, and an admin panel for managing products and orders."
+              description="Developed a feature-rich e-commerce application using MERN stack (MongoDB, Express, React, Node.js). The application includes functionalities such as order history tracking, user profile management, and an admin panel for managing products and orders.Use (id:ankuraditya1790027@gmail.com) (password:Ankur123) for demo purpose."
               ghLink="https://github.com/ankur7aditya/MERN-ecommerce"
               demoLink="https://mern-ecommerce-orpin.vercel.app/ "
             />
