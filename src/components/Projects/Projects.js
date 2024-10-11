@@ -6,6 +6,7 @@ import ecommerce from "../../Assets/Projects/E-commerce.png";
 import Candy from "../../Assets/Projects/CandyCrush.png";
 import RockPaper from "../../Assets/Projects/RockPaper.png";
 import amazon from "../../Assets/Projects/AmazonClone.png";
+import BHP from "../../Assets/Projects/bhp_ML.png";
 import weather from "../../Assets/Projects/weather.png";
 import invoice from "../../Assets/Projects/invoice.png";
 
@@ -21,6 +22,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BHP}
+              isBlog={false}
+              title="Banglore House Price Prediction"
+              description="Developed an end-to-end machine learning model to predict house prices. Performed data cleaning and outlier removal, then applied GridSearchCV with KFold to identify the optimal model. Deployed the solution using a Flask API, connecting it to a frontend for user interaction and predictions."
+              ghLink="https://github.com/ankur7aditya/Bangalore_House_Prediction"
+              // demoLink="https://invoice-lilac-alpha.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={invoice}
